@@ -1,5 +1,6 @@
 # env files
 .env
+Meta-Llama-3.1-8B.Q4_K_M.gguf
 
 # virtual environments
 .venv/
@@ -12,14 +13,8 @@ lora_model/
 outputs/
 model/
 unsloth_compiled_cache/
-_unsloth_sentencepiece_temp/
-_unsloth_temporary_saved_buffers/
-logging.txt
-Fact-check_chatbot.ipynb
-Fact-check_chatbot2.ipynb
-Fact-check_chatbot3.ipynb
-Fact-check_chatbot4.ipynb
-Fact-check_chatbot5.ipynb
+llama-b7132-bin-win-cpu-x64/
+
 
 # editor/OS noise
 .vscode/
