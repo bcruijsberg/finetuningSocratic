@@ -1,6 +1,8 @@
 # env files
 .env
-Meta-Llama-3.1-8B.Q4_K_M.gguf
+*.gguf
+*.safetensors
+*.bin
 
 # virtual environments
 .venv/
