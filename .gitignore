@@ -14,6 +14,7 @@ llama.cpp/
 lora_model/
 outputs/
 model/
+models/
 unsloth_compiled_cache/
 llama-b7132-bin-win-cpu-x64/
 
