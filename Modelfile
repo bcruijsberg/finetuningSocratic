@@ -1,0 +1,21 @@
+FROM ./mistral7b-q4km.gguf
+
+TEMPLATE """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+
+### Instruction:
+{{ .Prompt }}
+
+### Response:
+{{ .Response }}"""
+
+PARAMETER stop "<|end_header_id|>"
+PARAMETER stop "<|eot_id|>"
+PARAMETER stop "<|python_tag|>"
+PARAMETER stop "<|start_header_id|>"
+PARAMETER stop "<|eom_id|>"
+PARAMETER stop "<|finetune_right_pad_id|>"
+PARAMETER stop "<|end_of_text|>"
+PARAMETER stop "<|reserved_special_token_"
+
+PARAMETER temperature 0.7
+PARAMETER min_p 0.05
