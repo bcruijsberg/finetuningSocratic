@@ -1,0 +1,10 @@
+FROM mistral7b-instr-q4km.gguf
+
+TEMPLATE """[INST] {{ .System }}
+
+{{ .Prompt }}[/INST]{{ .Response }}"""
+
+# Cut off after the first closing brackets
+PARAMETER stop "]]"
+PARAMETER stop "</s>"
+PARAMETER num_predict 128
